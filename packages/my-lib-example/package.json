@@ -2,7 +2,7 @@
   "name": "my-package-example",
   "version": "0.0.1",
   "type": "module",
-  "main": "./cjs/my-lib.js",
+  "main": "./my-lib.js",
   "module": "./my-lib.js",
   "exports": {
     "require": "./cjs/my-lib.js",
