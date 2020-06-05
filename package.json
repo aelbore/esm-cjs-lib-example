@@ -1,0 +1,34 @@
+{
+  "name": "esm-cjs-lib-example",
+  "version": "1.0.0",
+  "description": "Example code how to publish ESM and CJS backward compatible package",
+  "main": "index.js",
+  "scripts": {
+    "build.lib": "rollup -c ./packages/my-lib-example/rollup.config.js",
+    "build.lib.cjs": "rollup -c ./packages/my-lib-cjs/rollup.config.js",
+    "build.all": "yarn build.lib && yarn build.lib.cjs",
+    "cjs.esm": "ts-esm ./packages/example/src/cjs-esm.js --commonjs",
+    "cjs.esm.ts": "ts-esm ./packages/example-ts/src/cjs-esm.ts --commonjs",
+    "cjs": "ts-esm ./packages/example/src/cjs.js",
+    "cjs.ts": "ts-esm ./packages/example-ts/src/cjs.ts",
+    "esm": "ts-esm ./packages/example/src/esm.js",
+    "esm.ts": "ts-esm ./packages/example-ts/src/esm.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aelbore/esm-cjs-lib-example.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aelbore/esm-cjs-lib-example/issues"
+  },
+  "homepage": "https://github.com/aelbore/esm-cjs-lib-example#readme",
+  "devDependencies": {
+    "aria-build": "^0.4.3",
+    "aria-fs": "^0.4.3",
+    "ts-esm": "^0.0.2",
+    "typescript": "^3.9.5"
+  }
+}

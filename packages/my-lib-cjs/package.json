@@ -1,0 +1,6 @@
+{
+  "name": "my-lib-cjs",
+  "version": "0.0.1",
+  "main": "./my-lib-cjs.js",
+  "typings": "./my-lib-cjs.d.ts"
+}
